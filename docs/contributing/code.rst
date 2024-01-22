@@ -22,6 +22,29 @@ Here's what the contribution process looks like in brief:
 
 See the :ref:`contributing_patch` how-to document for a walk-through of this process.
 
+***********
+Get started
+***********
+Quickly get started and play with django CMS code on your local machine.
+Let's assume that you've cloned your fork in the ``django-cms`` folder on your local machine.
+
+#. Fork our `GitHub`_ repository and clone the forked copy
+    
+.. code-block:: sh
+
+    $ cd django-cms
+    $ python3 -m venv .venv
+    $ source .venv/bin/activate
+    $ pip install --upgrade pip
+    $ pip install -r test_requirements/django-X.Y.txt   # django-5.0.txt is recommended
+
+    $ mkdir -p example/run
+    $ cd example/run
+    $ djangocms mysite
+    $ python -m manage runserver
+
+
+
 
 ********************************
 Basic requirements and standards
